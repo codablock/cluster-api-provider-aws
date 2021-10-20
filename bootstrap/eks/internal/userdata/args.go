@@ -34,6 +34,7 @@ const argsTemplate = `{{- define "args" -}}
 {{- if .PauseConatinerVersion }} --pause-container-version {{.PauseConatinerVersion}}{{- end -}}
 {{- if .DNSClusterIP }} --dns-cluster-ip {{.DNSClusterIP}}{{- end -}}
 {{- if .DockerConfigJson }} --docker-config-json {{.DockerConfigJson}}{{- end -}}
+{{- if .ContainerdExtraConfigToml }} --containerd-extra-config-toml '{{.ContainerdExtraConfigToml}}'{{- end -}}
 {{- end -}}`
 
 const kubeletArgsTemplate = `{{- define "kubeletArgsTemplate" -}}

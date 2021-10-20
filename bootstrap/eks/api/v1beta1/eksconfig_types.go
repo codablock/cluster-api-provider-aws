@@ -36,6 +36,10 @@ type EKSConfigSpec struct {
 	// This is expected to be a json string.
 	// +optional
 	DockerConfigJson *string `json:"dockerConfigJson,omitempty"`
+	// ContainerdExtraConfigToml Extra configuration to append to the containerd configuration. Useful if you want a custom config differing from the default one in the AMI.
+	// This is expected to be a toml string.
+	// +optional
+	ContainerdExtraConfigToml *string `json:"containerdExtraConfigToml,omitempty"`
 	// APIRetryAttempts is the number of retry attempts for AWS API call.
 	// +optional
 	APIRetryAttempts *int `json:"apiRetryAttempts,omitempty"`

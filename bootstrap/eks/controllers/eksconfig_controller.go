@@ -196,6 +196,7 @@ func (r *EKSConfigReconciler) joinWorker(ctx context.Context, cluster *clusterv1
 		ContainerRuntime: config.Spec.ContainerRuntime,
 		DNSClusterIP:     config.Spec.DNSClusterIP,
 		DockerConfigJson: config.Spec.DockerConfigJson,
+		ContainerdExtraConfigToml: config.Spec.ContainerdExtraConfigToml,
 		APIRetryAttempts: config.Spec.APIRetryAttempts,
 		UseMaxPods:       config.Spec.UseMaxPods,
 	}

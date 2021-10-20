@@ -35,6 +35,7 @@ type NodeInput struct {
 	ContainerRuntime      *string
 	DNSClusterIP          *string
 	DockerConfigJson      *string
+	ContainerdExtraConfigToml *string
 	APIRetryAttempts      *int
 	PauseContainerAccount *string
 	PauseConatinerVersion *string
